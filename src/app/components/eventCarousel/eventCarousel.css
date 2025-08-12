@@ -1,0 +1,14 @@
+/* -------------------------------------------------------- Book Carousel */
+.section .event-carousel {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1320px;
+}
+.section .event-carousel .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+/* -------------------------------------------------------- Book Carousel */

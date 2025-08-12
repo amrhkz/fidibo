@@ -1,0 +1,47 @@
+/* ------------------------------------------------------------ Public Styles */
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
+@font-face {
+  font-family: "BYekanBold";
+  src: url("/font/yekanbakhfa/woff/YekanBakhFaNum-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "BYekanBold";
+}
+a {
+  color: inherit;
+}
+:root {
+  --body-color: #18191a;
+  --sidebar-color: #242526;
+  --primary-color: #3a3b3c;
+  --primary-color-light: #3a3b3c;
+  --toggle-color: #fff;
+  --text-color: #ccc;
+
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+body.dark {
+  --body-color: #f5f6f8;
+  --sidebar-color: #fefffe;
+  --primary-color: #28c4cc;
+  --primary-color-light: #9344b5;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+  --profit-green: #17c785;
+  --loss-red: #eb3843;
+  --border-color: #323546;
+}
+body {
+  background: var(--body-color);
+}
+/* ------------------------------------------------------------ Public Styles */

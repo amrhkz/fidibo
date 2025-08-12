@@ -1,0 +1,227 @@
+/* ------------------------------------------------------------ Navbar */
+.navbar {
+  background: var(--sidebar-color);
+  border-radius: 0 0 12px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar .nav-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1320px;
+  gap: 12px;
+  padding: 25px 12px 12px 12px;
+}
+.navbar .nav-top img {
+  width: 110px;
+}
+.navbar .nav-top .search-field {
+  flex: auto;
+  padding: 12px;
+  background: #f4f6f9;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.navbar .nav-top .search-field input {
+  width: 100%;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+}
+.navbar .nav-top .nav-top-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.navbar .nav-top .my-lib-btn {
+  display: block;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 12px;
+  border: 1px solid #c5c5c5;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.navbar .nav-top .profile-btn {
+  display: block;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #c5c5c5;
+  border-radius: 6px;
+  padding: 12px;
+  cursor: pointer;
+}
+.navbar .nav-top .cart-btn {
+  display: block;
+  background: transparent;
+  border-radius: 6px;
+  border: 1px solid #c5c5c5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.navbar .nav-top .dark-mode-btn {
+  display: block;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+}
+.navbar .nav-top .search-field i,
+.navbar .nav-bottom .search-field i,
+.navbar .nav-top .my-lib-btn i,
+.navbar .nav-top .profile-btn i,
+.navbar .nav-top .cart-btn i,
+.navbar .nav-top .dark-mode-btn i,
+.navbar .nav-bottom .app-dl-btn i {
+  font-size: 20px;
+  color: #333333;
+}
+.navbar .nav-top .profile-btn i:first-child,
+.navbar .nav-top .my-lib-btn i {
+  color: var(--primary-color);
+}
+.navbar .nav-bottom {
+  width: 100%;
+  max-width: 1320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-color);
+}
+.navbar .nav-bottom .search-field {
+  display: none;
+}
+.navbar .nav-bottom ul {
+  display: flex;
+  gap: 24px;
+  font-size: 16px;
+}
+.navbar .nav-bottom ul li a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+.navbar .nav-bottom ul li a::after {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar .nav-bottom ul li:nth-child(7) a::after {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color-light);
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar .nav-bottom ul li a:hover::after {
+  width: 100%;
+}
+.navbar .nav-bottom ul li i {
+  font-size: 24px;
+  color: #77797a;
+}
+.navbar .nav-bottom ul li:nth-child(7),
+.navbar .nav-bottom ul li:nth-child(7) i {
+  color: var(--primary-color-light);
+}
+.navbar .nav-bottom .app-dl-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background: transparent;
+  border: none;
+  gap: 6px;
+  cursor: pointer;
+}
+.navbar .nav-bottom .app-dl-btn i {
+  color: var(--primary-color);
+}
+@media (max-width: 1140px) {
+  .navbar .nav-bottom ul,
+  .navbar .nav-bottom .app-dl-btn {
+    display: none;
+  }
+  .navbar .nav-top .search-field {
+    display: none;
+  }
+  .navbar .nav-bottom {
+    padding: 12px;
+  }
+  .navbar .nav-bottom .search-field {
+    display: block;
+    flex: auto;
+    padding: 12px;
+    background: #f4f6f9;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .navbar .nav-bottom .search-field input {
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+  }
+  .navbar .nav-top .my-lib-btn,
+  .navbar .nav-top .dark-mode-btn {
+    display: none;
+  }
+  .navbar .nav-top .profile-btn {
+    order: 2;
+    border: none;
+    padding: 6px;
+  }
+  .navbar .nav-top .cart-btn {
+    border: none;
+    padding: 6px;
+  }
+  .navbar .nav-top .divider {
+    height: 25px;
+    width: 1px;
+    background: #c5c5c5;
+    display: block;
+  }
+  .navbar .nav-top .profile-btn i,
+  .navbar .nav-top .cart-btn i {
+    font-size: 26px;
+    color: #5e5e5e;
+  }
+  .navbar .nav-top .profile-btn i:nth-child(2) {
+    display: none;
+  }
+}
+/* ------------------------------------------------------------ Navbar */

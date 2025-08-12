@@ -1,0 +1,20 @@
+/* ----------------------------------------------------- Category Carousel */
+.three-column-banner-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 12px;
+  height: 145px;
+  background: #983728;
+  cursor: pointer;
+}
+.three-column-banner-item img {
+  max-width: 40px;
+  max-height: 40px;
+}
+.three-column-banner-item-content {
+  color: #fff;
+}
+/* ----------------------------------------------------- Category Carousel */

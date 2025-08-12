@@ -1,0 +1,31 @@
+.vl-cards-full-content-item{
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.vl-cards-full-content-item-img-cont img{
+    border-radius: 12px;
+    height: 160px;
+    object-fit: cover;
+}
+.vl-cards-full-content-item-content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.vl-cards-full-content-item-content-title{
+    font-size: 14px;
+}
+.vl-cards-full-content-item-bottom{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.vl-cards-full-content-item-bottom img{
+    width: 48px;
+    border-radius: 50%;
+}

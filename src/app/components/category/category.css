@@ -1,0 +1,29 @@
+/* ---------------------------------------------------------- Category */
+.category {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1320px;
+  padding: 12px;
+}
+.category .cat-card {
+  padding: 16px 24px;
+  background: var(--sidebar-color);
+  color: var(--border-color);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.category .cat-card i {
+  font-size: 32px;
+  color: var(--primary-color);
+}
+.category .cat-card:nth-child(3) i {
+  color: var(--primary-color-light);
+}
+.category .cat-card span {
+  font-size: 16px;
+}
+/* ---------------------------------------------------------- Category */
