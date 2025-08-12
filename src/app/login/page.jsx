@@ -194,7 +194,7 @@ const Login = () => {
               </a>
               <div> از فیدیبو را می‌پذیرم.</div>
             </div>
-            <CountryCode />
+            {/* <CountryCode /> */}
           </div>
         </div>
       </div>
